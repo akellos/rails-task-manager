@@ -8,6 +8,9 @@
       <i class="fas fa-square"></i>
     <% end %>
     <%= link_to task.title, task_path(task) %>
+    <div class="btn-primary">
+      <%= link_to "Delete this task", task_path(task), method: :delete %>
+      </div>
   </li>
   <% end %>
 </ol>
